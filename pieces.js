@@ -47,3 +47,14 @@ for (let i = 0; i < pieces.length; i++) {
     });
    console.log(piecesFiltrees)
 });
+
+const boutonDecroissant = document.querySelector("btn-decroissant");
+
+boutonDecroissant.addEventListener("click", function () {
+    const piecesOrdonnees = Array.from(pieces);
+    piecesOrdonnees.sort(function (a, b) {
+        return b.prix - a.prix;
+     });
+     console.log(piecesOrdonnees);
+});
+
