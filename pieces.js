@@ -31,7 +31,7 @@ for (let i = 0; i < pieces.length; i++) {
 
  const boutonTrier = document.querySelector(".btn-trier");
 
- boutonTrier.addEventListener("click", function () {
+ boutonTrier.addEventListener("click", () => {
     const piecesOrdonnees = Array.from(pieces);
     piecesOrdonnees.sort(function (a, b) {
         return a.prix - b.prix;
@@ -41,7 +41,7 @@ for (let i = 0; i < pieces.length; i++) {
 
  const boutonFiltrer = document.querySelector(".btn-filtrer");
 
- boutonFiltrer.addEventListener("click", function () {
+ boutonFiltrer.addEventListener("click", () => {
     const piecesFiltrees = pieces.filter(function (piece) {
         return piece.prix <= 35;
     });
@@ -50,7 +50,7 @@ for (let i = 0; i < pieces.length; i++) {
 
 const boutonDecroissant = document.querySelector(".btn-decroissant");
 
-boutonDecroissant.addEventListener("click", function () {
+boutonDecroissant.addEventListener("click", () => {
     const piecesOrdonnees = Array.from(pieces);
     piecesOrdonnees.sort(function (a, b) {
         return b.prix - a.prix;
@@ -60,7 +60,7 @@ boutonDecroissant.addEventListener("click", function () {
 
 const boutonNoDescription = document.querySelector(".btn-nodesc");
 
-boutonNoDescription.addEventListener("click", function (){
+boutonNoDescription.addEventListener("click", () =>{
    const piecesFiltrees = pieces.filter(function (piece) {
        return piece.description
    });
