@@ -58,3 +58,11 @@ boutonDecroissant.addEventListener("click", function () {
      console.log(piecesOrdonnees);
 });
 
+const boutonNoDescription = document.querySelector("btn-nodesc");
+
+boutonNoDescription.addEventListener("click", function (){
+   const piecesFiltrees = pieces.filter(function (piece) {
+       return piece.description
+   });
+  console.log(piecesFiltrees)
+});
