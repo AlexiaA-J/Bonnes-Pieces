@@ -1,6 +1,8 @@
 const reponse = await fetch("pieces-autos.json");
 const pieces = await reponse.json();
 
+// Affichage des fiches des differentes pieces
+
 for (let i = 0; i < pieces.length; i++) {
 
     const article = pieces[i];
@@ -28,6 +30,8 @@ for (let i = 0; i < pieces.length; i++) {
     pieceElement.appendChild(stockElement);
 
  }
+
+ // Fonctionnement des boutons de filtrage
 
  const boutonTrier = document.querySelector(".btn-trier");
 
@@ -66,3 +70,5 @@ boutonNoDescription.addEventListener("click", () =>{
    });
   console.log(piecesFiltrees)
 });
+
+// Affichage de la liste des differentes pieces
