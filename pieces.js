@@ -30,6 +30,7 @@ for (let i = 0; i < pieces.length; i++) {
  }
 
  const boutonTrier = document.querySelector(".btn-trier");
+
  boutonTrier.addEventListener("click", function () {
     const piecesOrdonnees = Array.from(pieces);
     piecesOrdonnees.sort(function (a, b) {
@@ -37,3 +38,12 @@ for (let i = 0; i < pieces.length; i++) {
      });
      console.log(piecesOrdonnees);
  });
+
+ const boutonFiltrer = document.querySelector(".btn-filtrer");
+
+ boutonFiltrer.addEventListener("click", function () {
+    const piecesFiltrees = pieces.filter(function (piece) {
+        return piece.prix <= 35;
+    });
+   console.log(piecesFiltrees)
+});
