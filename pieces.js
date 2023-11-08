@@ -48,7 +48,7 @@ for (let i = 0; i < pieces.length; i++) {
    console.log(piecesFiltrees)
 });
 
-const boutonDecroissant = document.querySelector("btn-decroissant");
+const boutonDecroissant = document.querySelector(".btn-decroissant");
 
 boutonDecroissant.addEventListener("click", function () {
     const piecesOrdonnees = Array.from(pieces);
@@ -58,7 +58,7 @@ boutonDecroissant.addEventListener("click", function () {
      console.log(piecesOrdonnees);
 });
 
-const boutonNoDescription = document.querySelector("btn-nodesc");
+const boutonNoDescription = document.querySelector(".btn-nodesc");
 
 boutonNoDescription.addEventListener("click", function (){
    const piecesFiltrees = pieces.filter(function (piece) {
